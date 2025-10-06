@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center; /* Center the scores */
+    align-items: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.score-board div {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px; /* Space between scores */
+    min-width: 50px; /* Ensure consistent width */
+}
+
+.score-label {
+    background: none !important; /* Override background for labels */
+    color: #333 !important; /* Set label color */
+    font-size: 18px !important;
+    padding: 5px 0 !important;
+    margin: 0 5px !important;
+}
+
+#message {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #555;
+    font-weight: bold;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    margin-top: 30px;
+}
+
+.choice {
+    width: 120px; /* Size of the choice area */
+    height: 120px;
+    border: 3px solid #ccc;
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: #f9f9f9;
+}
+
+.choice:hover {
+    border-color: #555;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.choice img {
+    max-width: 80px; /* Size of the image within the circle */
+    max-height: 80px;
+    display: block; /* Remove extra space below image */
+}
